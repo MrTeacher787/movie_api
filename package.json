@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/MrTeacher787/movie_api/issues"
   },
-  "homepage": "https://github.com/MrTeacher787/movie_api#readme"
+  "homepage": "https://github.com/MrTeacher787/movie_api#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
