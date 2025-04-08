@@ -1,0 +1,27 @@
+{
+  "name": "initial-package",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\"",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrTeacher787/movie_api.git"
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": {
+    "name": "Ivan G. Irizarry",
+    "email": "cristophergiovanni@gmail.com",
+    "url": "https://github.com/MrTeacher787/movie_api.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrTeacher787/movie_api/issues"
+  },
+  "homepage": "https://github.com/MrTeacher787/movie_api#readme"
+}
