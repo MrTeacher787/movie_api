@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/MrTeacher787/movie_api#readme",
   "dependencies": {
+    "express": "^5.1.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
