@@ -1,7 +1,21 @@
 const express = require('express');
-  morgan = require('morgan');
-
+const morgan = require('morgan');
 const app = express();
+
+let myLogger = (req, res, next) => {
+  console.log(req.url);
+  next();
+};
+
+let requestTime = (req, res, next) => {
+  req.requestTime = Date.now();
+  next();
+};
+
+app.use(morgan('common'));
+app.use(express.static('public'));
+app.use(myLogger);
+app.use(requestTime);
 
 const http = require('http'),
   url = require('url');
@@ -21,72 +35,22 @@ http
 
 console.log('My first Node test server is running on Port 8080.');
 
+
+app.get('/movies', (req, res) => {
 let topMovies = [
-  {
-    title: 'Enter the Dragon',
-    director: 'Robert Clouse',
-    starring: 'Bruce Lee',
-  },
-  {
-    title: 'The Big Boss',
-    director: 'Lo Wei, Wu Chia-Hsiang',
-    starring: 'Bruce Lee',
-  },
-  {
-    title: 'Rumble in the Bronx',
-    director: 'Stanley Tong',
-    starring: 'Jackie Chan',
-  },
-  {
-    title: 'Drunken Master',
-    director: 'Yuen Woo-ping',
-    starring: 'Jackie Chan',
-  },
-  {
-    title: 'The One',
-    director: 'James Wong',
-    starring: 'Jet Li',
-  },
-  {
-    title: 'Ip-Man',
-    director: 'Wilson Yip',
-    starring: 'Donnie Yen',
-  },
-  {
-    title: 'Ong-Bak',
-    director: 'Prachya Pinkaew',
-    starring: 'Tony Jaa',
-  },
-  {
-    title: 'Bloodsport',
-    director: 'Newt Arnold',
-    starring: 'Jean Claude Van Damme',
-  },
-  {
-    title: 'Kung Fu Hustle',
-    director: 'Stephen Chow',
-    starring: 'Stephen Chow',
-  },
-  {
-    title: 'Kung Pow! Enter the Fist',
-    director: 'Steve Oedekerk',
-    starring: 'Steve Oedekerk',
-  },
+  {title: 'Enter the Dragon', director: 'Robert Clouse', starring: 'Bruce Lee'},
+  {title: 'The Big Boss', director: 'Lo Wei, Wu Chia-Hsiang', starring: 'Bruce Lee'},
+  {title: 'Rumble in the Bronx', director: 'Stanley Tong', starring: 'Jackie Chan'},
+  {title: 'Drunken Master', director: 'Yuen Woo-ping', starring: 'Jackie Chan'},
+  {title: 'The One', director: 'James Wong', starring: 'Jet Li'},
+  {title: 'Ip-Man', director: 'Wilson Yip', starring: 'Donnie Yen'},
+  {title: 'Ong-Bak', director: 'Prachya Pinkaew', starring: 'Tony Jaa',},
+  {title: 'Bloodsport', director: 'Newt Arnold', starring: 'Jean Claude Van Damme',},
+  {title: 'Kung Fu Hustle', director: 'Stephen Chow', starring: 'Stephen Chow'},
+  {title: 'Kung Pow! Enter the Fist', director: 'Steve Oedekerk', starring: 'Steve Oedekerk'},
 ];
-
-let myLogger = (req, res, next) => {
-  console.log(req.url);
-  next();
-};
-
-let requestTime = (req, res, next) => {
-  req.requestTime = Date.now();
-  next();
-};
-
-app.use(morgan('common'));
-app.use(myLogger);
-app.use(requestTime);
+res.json(topMovies);
+});
 
 // GET requests
 app.get("/", (req, res) => {
@@ -103,10 +67,6 @@ app.get('/secreturl', (req, res) => {
 
 app.get('/documentation', (req, res) => {
   res.sendFile('public/documentation.html', { root: __dirname });
-});
-
-app.get('/movies', (req, res) => {
-  res.json(topMovies);
 });
 
 //listen for requests
