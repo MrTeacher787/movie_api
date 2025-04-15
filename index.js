@@ -88,7 +88,7 @@ app.get("/movies", (req, res) => {
       starring: "Steve Oedekerk",
     },
   ];
-  
+
   res.json(topMovies);
 });
 
@@ -107,6 +107,11 @@ app.get("/secreturl", (req, res) => {
 
 app.get("/documentation", (req, res) => {
   res.sendFile("public/documentation.html", { root: __dirname });
+});
+
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Well, that\'s not supposed to happen!');
 });
 
 //listen for requests
