@@ -85,13 +85,13 @@ app.get("/movies", (req, res) => {
 
 // GET requests
 app.get("/", (req, res) => {
-  let responseText = "Welcome to my app!";
+  let responseText = "Welcome to my kickin\' app!";
   responseText += "<small>Requested at: " + req.requestTime + "</small>";
   res.send(responseText);
 });
 
 app.get("/secreturl", (req, res) => {
-  let responseText = "This is a secret url with super top-secret content.";
+  let responseText = "You were not supposed to find this secret url with super top-secret content. It's secret!";
   responseText += "<small>Requested at: " + req.requestTime + "</small>";
   res.send(responseText);
 });
