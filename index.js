@@ -1,5 +1,8 @@
 const express = require("express");
 const morgan = require("morgan");
+const bodyParser = require("body-parser");
+const uuid = require("uuid");
+
 const app = express();
 
 // logs request info.
@@ -21,9 +24,7 @@ app.use(morgan("common"));
 app.use(express.static("public"));
 app.use(myLogger);
 app.use(requestTime);
-
-// define route for '/movies'
-app.get("/movies", (req, res) => {
+app.use(bodyParser.json());
   
   // my top martial arts movies
   let topMovies = [
@@ -89,8 +90,10 @@ app.get("/movies", (req, res) => {
     },
   ];
   
+// define route for '/movies'
+app.get("/movies", (req, res) => {
   // send movie info array as JSON
-  res.json(topMovies);
+  res.status(200).json(topMovies);
 });
 
 // GET requests
