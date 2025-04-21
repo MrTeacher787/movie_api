@@ -31,51 +31,61 @@ app.get("/movies", (req, res) => {
       title: "Enter the Dragon",
       director: "Robert Clouse",
       starring: "Bruce Lee",
+      year: "1973"
     },
     {
       title: "The Big Boss",
       director: "Lo Wei, Wu Chia-Hsiang",
       starring: "Bruce Lee",
+      year: "1971"
     },
     {
       title: "Rumble in the Bronx",
       director: "Stanley Tong",
       starring: "Jackie Chan",
+      year: "1995"
     },
     {
       title: "Drunken Master",
       director: "Yuen Woo-ping",
       starring: "Jackie Chan",
+      year: "1978"
     },
     { 
       title: "The One", 
       director: "James Wong", 
-      starring: "Jet Li" 
+      starring: "Jet Li",
+      year: "2001" 
     },
     { 
       title: "Ip-Man", 
       director: "Wilson Yip", 
-      starring: "Donnie Yen" 
+      starring: "Donnie Yen",
+      year: "2008" 
     },
     { 
       title: "Ong-Bak", 
       director: "Prachya Pinkaew", 
-      starring: "Tony Jaa" 
+      starring: "Tony Jaa",
+      year: "2003" 
     },
     {
       title: "Bloodsport",
       director: "Newt Arnold",
       starring: "Jean Claude Van Damme",
+      year: "1988"
     },
     {
       title: "Kung Fu Hustle",
       director: "Stephen Chow",
       starring: "Stephen Chow",
+      year: "2004"
     },
     {
       title: "Kung Pow! Enter the Fist",
       director: "Steve Oedekerk",
       starring: "Steve Oedekerk",
+      year: "2002"
     },
   ];
   
