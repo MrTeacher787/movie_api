@@ -29,64 +29,184 @@ app.use(bodyParser.json());
   // my top martial arts movies
   let topMovies = [
     {
-      title: "Enter the Dragon",
-      director: "Robert Clouse",
-      starring: "Bruce Lee",
-      year: "1973"
+      Title: "Enter the Dragon",
+      Genre: {
+        Name: "Action/Crime",
+        Description: ""
+      },
+      Director: {
+        Name: "Robert Clouse",
+        Bio: "Robert Clouse was an American film director and producer, known primarily for his work in the action/adventure and martial arts genres. He died on February 4, 1997, in Oregon of kidney failure. Clouse directed Bruce Lee in Lee's second English-speaking film starring role, 1973's Enter the Dragon.",
+        Birth: "1928"
+      },
+      Starring: {
+        Name: "Bruce Lee",
+        Bio: "Bruce Lee was a Hong Kong-American actor, martial artist, and philosopher who helped make martial arts movies popular in the 1970s. Born Lee Jun-fan in San Francisco, he became a child actor in Hong Kong before returning to the US to teach martial arts. Lee is known for his roles in Enter the Dragon and The Chinese Connection. He's considered one of the most influential martial artists and a cultural icon.",
+        Birth: "1940"
+      },
+      Year: "1973"
     },
     {
-      title: "The Big Boss",
-      director: "Lo Wei, Wu Chia-Hsiang",
-      starring: "Bruce Lee",
-      year: "1971"
+      Title: "The Big Boss",
+      Genre: {
+        Name: "Action/Crime",
+        Description: ""
+      },
+      Director: {
+        Name: "Lo Wei, Wu Chia-Hsiang",
+        Bio: "Lo Wei was a Hong Kong film director and actor best known for launching the martial arts film careers of both Bruce Lee, in The Big Boss and Fist of Fury, and Jackie Chan, in New Fist of Fury.",
+        Birth: "1918"
+      },
+      Starring: {
+        Name: "Bruce Lee",
+        Bio: "Bruce Lee was a Hong Kong-American actor, martial artist, and philosopher who helped make martial arts movies popular in the 1970s. Born Lee Jun-fan in San Francisco, he became a child actor in Hong Kong before returning to the US to teach martial arts. Lee is known for his roles in Enter the Dragon and The Chinese Connection. He's considered one of the most influential martial artists and a cultural icon.",
+        Birth: "1940"
+      },
+      Year: "1971"
     },
     {
-      title: "Rumble in the Bronx",
-      director: "Stanley Tong",
-      starring: "Jackie Chan",
-      year: "1995"
+      Title: "Rumble in the Bronx",
+      Genre: {
+        Name: "Action/Comedy",
+        Description: ""
+      },
+      Director: {
+        Name: "Stanley Tong",
+        Bio: "Stanley Tong is a Hong Kong film director, producer, stunt choreographer, screenwriter, entrepreneur and philanthropist. He is known for directing action-adventure films, including several with Jackie Chan.",
+        Birth: "1960"
+      },
+      Starring: {
+        Name: "Jackie Chan",
+        Bio: "Fang Shilong is a Hong Kong-born actor, stuntman, martial artist, and filmmaker. Chan has starred in action-packed films like The Karate Kid, Rumble in the Bronx, and Armour of God. He has stars on the Hollywood Walk of Fame and the Hong Kong SRA Avenue of Stars. Chan is also a UNICEF Goodwill Ambassador and philanthropist who advocates for conservation, disaster relief, and animal welfare.",
+        Birth: "1954"
+      },
+      Year: "1995"
     },
     {
-      title: "Drunken Master",
-      director: "Yuen Woo-ping",
-      starring: "Jackie Chan",
-      year: "1978"
+      Title: "Drunken Master",
+      Genre: {
+        Name: "Action/Comedy",
+        Description: ""
+      },
+      Director: {
+        Name: "Yuen Woo-ping",
+        Bio: "Yuen Woo-ping is a Hong Kong martial arts choreographer and film director who worked in Hong Kong action cinema and later Hollywood films. He is one of the inductees on the Avenue of Stars in Hong Kong. Yuen is also a son of Yuen Siu-tien, a martial arts film actor.",
+        Birth: "1945"
+      },
+      Starring: {
+        Name: "Jackie Chan",
+        Bio: "Fang Shilong is a Hong Kong-born actor, stuntman, martial artist, and filmmaker. Chan has starred in action-packed films like The Karate Kid, Rumble in the Bronx, and Armour of God. He has stars on the Hollywood Walk of Fame and the Hong Kong SRA Avenue of Stars. Chan is also a UNICEF Goodwill Ambassador and philanthropist who advocates for conservation, disaster relief, and animal welfare.",
+        Birth: "1954"
+      },
+      Year: "1978"
     },
     { 
-      title: "The One", 
-      director: "James Wong", 
-      starring: "Jet Li",
-      year: "2001" 
+      Title: "The One",
+      Genre: {
+        Name: "Action/Sci-fi",
+        Description: ""
+      }, 
+      Director: {
+        Name: "James Wong",
+        Bio: "James Wong is an American television and film director, screenwriter and producer. He is known for co-writing episodes of the Fox science fiction supernatural drama series The X-Files with his writing partner, Glen Morgan. Morgan and Wong are founders of the Hard Eight Pictures and co-created Space: Above and Beyond.",
+        Birth: "1959"
+      }, 
+      Starring: {
+        Name: "Jet Li",
+        Bio: "\"Jet\" Li Lianjie is a Chinese-born Singaporean martial artist, actor, and philanthropist. After three years of training with acclaimed wushu teacher Wu Bin, Li won his first of five men's national championship for the Beijing Wushu Team in 1974.",
+        Birth: "1963"
+      },
+      Year: "2001" 
     },
     { 
-      title: "Ip-Man", 
-      director: "Wilson Yip", 
-      starring: "Donnie Yen",
-      year: "2008" 
+      Title: "Ip-Man",
+      Genre: {
+        Name: "Action/Sport",
+        Description: ""
+      }, 
+      Director: {
+        Name: "Wilson Yip",
+        Bio: "Wilson Yip Wai-Shun is a Hong Kong actor, filmmaker and screenwriter. His films include Bio Zombie, The White Dragon, SPL: Sha Po Lang, Dragon Tiger Gate, Flash Point and the Ip Man series.",
+        Birth: "1964"
+      }, 
+      Starring: {
+        Name: "Donnie Yen",
+        Bio: "Donnie Yen Chi-tan is a Hong Kong actor, filmmaker, martial artist, and action director. He is the recipient of various accolades, including three Golden Horse Awards and five Hong Kong Film Awards.",
+        Birth: "1963"
+      },
+      Year: "2008" 
     },
     { 
-      title: "Ong-Bak", 
-      director: "Prachya Pinkaew", 
-      starring: "Tony Jaa",
-      year: "2003" 
+      Title: "Ong-Bak",
+      Genre: {
+        Name: "Action/Thriller",
+        Description: ""
+      }, 
+      Director: {
+        Name: "Prachya Pinkaew", 
+        Bio: "Prachya Pinkaew is a Thai film director, film producer and screenwriter. His films include Ong-Bak: Muay Thai Warrior and Tom-Yum-Goong, both martial arts films starring Tony Jaa.",
+        Birth: "1962"
+      },
+      Starring: {
+        Name: "Tony Jaa",
+        Bio: "Tatchakorn Yeerum, better known internationally as Tony Jaa and in Thailand as Jaa Phanom, is a Thai martial artist, actor, action choreographer, stuntman, and director.",
+        Birth: "1976"
+      },
+      Year: "2003" 
     },
     {
-      title: "Bloodsport",
-      director: "Newt Arnold",
-      starring: "Jean Claude Van Damme",
-      year: "1988"
+      Title: "Bloodsport",
+      Genre: {
+        Name: "Action/Sport",
+        Description: ""
+      },
+      Director: {
+        Name: "Newt Arnold",
+        Bio: "Newt Arnold was an American film director, producer and screenwriter. Arnold directed Bloodsport, which was released in 1988 and has since become a cult film, as well as several other screen works.",
+        Birth: "1922"
+      },
+      Starring: {
+        Name: "Jean Claude Van Damme",
+        Bio: "Jean-Claude Van Damme, born Jean-Claude Camille François Van Varenberg, is a Belgian actor and martial artist known for his action movies. His 1988 film Bloodsport cemented his status as a global action star. He followed it up with a string of successful films in the early 1990s, including Kickboxer, Cyborg, and Timecop. Van Damme's on-screen charisma and martial arts skills made him a favorite among action movie fans.",
+        Birth: "1960"
+      },
+      Year: "1988"
     },
     {
-      title: "Kung Fu Hustle",
-      director: "Stephen Chow",
-      starring: "Stephen Chow",
-      year: "2004"
+      Title: "Kung Fu Hustle",
+      Genre: {
+        Name: "Action/Comedy",
+        Description: ""
+      },
+      Director: {
+        Name: "Stephen Chow",
+        Bio: "Stephen Chow Sing-chi is a Hong Kong filmmaker and former actor, known for his mo lei tau comedy. His career began in television, where he gained recognition through variety shows and TV dramas.",
+        Birth: "1962"
+      },
+      Starring: {
+        Name: "Stephen Chow",
+        Bio: "Stephen Chow Sing-chi is a Hong Kong filmmaker and former actor, known for his mo lei tau comedy. His career began in television, where he gained recognition through variety shows and TV dramas.",
+        Birth: "1962"
+      },
+      Year: "2004"
     },
     {
-      title: "Kung Pow! Enter the Fist",
-      director: "Steve Oedekerk",
-      starring: "Steve Oedekerk",
-      year: "2002"
+      Title: "Kung Pow! Enter the Fist",
+      Genre: {
+        Name: "Comedy/Action",
+        Description: ""
+      },
+      Director: {
+        Name: "Steve Oedekerk",
+        Bio: "Steven Brent Oedekerk is an American filmmaker, actor and stand-up comedian. He is best known for his collaborations with actor and comedian Jim Carrey and director Tom Shadyac, his series of \"Thumbmation\" shorts and his film Kung Pow!",
+        Birth: "1961"
+      },
+      Starring: {
+        Name: "Steve Oedekerk",
+        Bio: "Steven Brent Oedekerk is an American filmmaker, actor and stand-up comedian. He is best known for his collaborations with actor and comedian Jim Carrey and director Tom Shadyac, his series of \"Thumbmation\" shorts and his film Kung Pow! ",
+        Birth: "1961"
+      },
+      Year: "2002"
     },
   ];
   
