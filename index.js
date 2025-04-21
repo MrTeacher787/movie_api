@@ -90,10 +90,22 @@ app.use(bodyParser.json());
     },
   ];
   
-// define route for '/movies'
+// GET a list of '/movies'
 app.get("/movies", (req, res) => {
   // send movie info array as JSON
   res.status(200).json(topMovies);
+});
+
+// GET '/movies' by title
+app.get("/movies/:title", (req, res) => {
+  const { title } = req.params;
+  const movie = topMovies.find( movie => movie.Title === title );
+
+  if (movie) {
+    res.status(200).json(movie);
+  } else {
+    res.status(400).send('No such movie.')
+  }
 });
 
 // GET requests
