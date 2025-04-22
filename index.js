@@ -31,8 +31,8 @@ app.use(bodyParser.json());
     {
       Title: "Enter the Dragon",
       Genre: {
-        Name: "Action/Crime",
-        Description: ""
+        Name: "Action",
+        Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       },
       Director: {
         Name: "Robert Clouse",
@@ -49,8 +49,8 @@ app.use(bodyParser.json());
     {
       Title: "The Big Boss",
       Genre: {
-        Name: "Action/Crime",
-        Description: ""
+        Name: "Action",
+        Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       },
       Director: {
         Name: "Lo Wei, Wu Chia-Hsiang",
@@ -67,8 +67,8 @@ app.use(bodyParser.json());
     {
       Title: "Rumble in the Bronx",
       Genre: {
-        Name: "Action/Comedy",
-        Description: ""
+        Name: "Action",
+        Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       },
       Director: {
         Name: "Stanley Tong",
@@ -85,8 +85,8 @@ app.use(bodyParser.json());
     {
       Title: "Drunken Master",
       Genre: {
-        Name: "Action/Comedy",
-        Description: ""
+        Name: "Action",
+        Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       },
       Director: {
         Name: "Yuen Woo-ping",
@@ -103,8 +103,8 @@ app.use(bodyParser.json());
     { 
       Title: "The One",
       Genre: {
-        Name: "Action/Sci-fi",
-        Description: ""
+        Name: "Action",
+        Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       }, 
       Director: {
         Name: "James Wong",
@@ -121,8 +121,8 @@ app.use(bodyParser.json());
     { 
       Title: "Ip-Man",
       Genre: {
-        Name: "Action/Sport",
-        Description: ""
+        Name: "Action",
+        Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       }, 
       Director: {
         Name: "Wilson Yip",
@@ -139,8 +139,8 @@ app.use(bodyParser.json());
     { 
       Title: "Ong-Bak",
       Genre: {
-        Name: "Action/Thriller",
-        Description: ""
+        Name: "Action",
+        Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       }, 
       Director: {
         Name: "Prachya Pinkaew", 
@@ -157,8 +157,8 @@ app.use(bodyParser.json());
     {
       Title: "Bloodsport",
       Genre: {
-        Name: "Action/Sport",
-        Description: ""
+        Name: "Action",
+        Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       },
       Director: {
         Name: "Newt Arnold",
@@ -175,8 +175,8 @@ app.use(bodyParser.json());
     {
       Title: "Kung Fu Hustle",
       Genre: {
-        Name: "Action/Comedy",
-        Description: ""
+        Name: "Action",
+        Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       },
       Director: {
         Name: "Stephen Chow",
@@ -193,8 +193,8 @@ app.use(bodyParser.json());
     {
       Title: "Kung Pow! Enter the Fist",
       Genre: {
-        Name: "Comedy/Action",
-        Description: ""
+        Name: "Comedy",
+        Description: "The comedy genre is defined by events that are intended to make someone laugh, no matter if the story is macabre, droll, or zany. Comedy can be found in most movies, but if the majority of the film is intended to be a comedy you may safely place it in this genre. The best comedy movies range throughout this entire spectrum of humor."
       },
       Director: {
         Name: "Steve Oedekerk",
@@ -225,6 +225,18 @@ app.get("/movies/:title", (req, res) => {
     res.status(200).json(movie);
   } else {
     res.status(400).send('No such movie.')
+  }
+});
+
+// GET '/movies' by genre
+app.get("/movies/genre/:genreMain", (req, res) => {
+  const { genreMain } = req.params;
+  const movie = topMovies.find( movie => movie.Genre.Main === genreMain ).Genre;
+
+  if (genre) {
+    res.status(200).json(genre);
+  } else {
+    res.status(400).send('No such genre.')
   }
 });
 
