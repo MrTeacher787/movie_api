@@ -44,7 +44,9 @@ app.use(bodyParser.json());
         Bio: "Bruce Lee was a Hong Kong-American actor, martial artist, and philosopher who helped make martial arts movies popular in the 1970s. Born Lee Jun-fan in San Francisco, he became a child actor in Hong Kong before returning to the US to teach martial arts. Lee is known for his roles in Enter the Dragon and The Chinese Connection. He's considered one of the most influential martial artists and a cultural icon.",
         Birth: "1940"
       },
-      Year: "1973"
+      Year: "1973",
+      ImageURL: "https://www.imdb.com/title/tt0070034/mediaviewer/rm638853120/?ref_=tt_ov_i",
+      Featured: false
     },
     {
       Title: "The Big Boss",
@@ -62,7 +64,9 @@ app.use(bodyParser.json());
         Bio: "Bruce Lee was a Hong Kong-American actor, martial artist, and philosopher who helped make martial arts movies popular in the 1970s. Born Lee Jun-fan in San Francisco, he became a child actor in Hong Kong before returning to the US to teach martial arts. Lee is known for his roles in Enter the Dragon and The Chinese Connection. He's considered one of the most influential martial artists and a cultural icon.",
         Birth: "1940"
       },
-      Year: "1971"
+      Year: "1971",
+      ImageURL: "https://www.imdb.com/title/tt0067824/mediaviewer/rm2200915969/",
+      Featured: false
     },
     {
       Title: "Rumble in the Bronx",
@@ -80,7 +84,9 @@ app.use(bodyParser.json());
         Bio: "Fang Shilong is a Hong Kong-born actor, stuntman, martial artist, and filmmaker. Chan has starred in action-packed films like The Karate Kid, Rumble in the Bronx, and Armour of God. He has stars on the Hollywood Walk of Fame and the Hong Kong SRA Avenue of Stars. Chan is also a UNICEF Goodwill Ambassador and philanthropist who advocates for conservation, disaster relief, and animal welfare.",
         Birth: "1954"
       },
-      Year: "1995"
+      Year: "1995",
+      ImageURL: "https://www.imdb.com/title/tt0113326/mediaviewer/rm247021312/?ref_=tt_ov_i",
+      Featured: false
     },
     {
       Title: "Drunken Master",
@@ -98,7 +104,9 @@ app.use(bodyParser.json());
         Bio: "Fang Shilong is a Hong Kong-born actor, stuntman, martial artist, and filmmaker. Chan has starred in action-packed films like The Karate Kid, Rumble in the Bronx, and Armour of God. He has stars on the Hollywood Walk of Fame and the Hong Kong SRA Avenue of Stars. Chan is also a UNICEF Goodwill Ambassador and philanthropist who advocates for conservation, disaster relief, and animal welfare.",
         Birth: "1954"
       },
-      Year: "1978"
+      Year: "1978",
+      ImageURL: "https://www.imdb.com/title/tt0080179/mediaviewer/rm1059532801/",
+      Featured: false
     },
     { 
       Title: "The One",
@@ -116,7 +124,9 @@ app.use(bodyParser.json());
         Bio: "\"Jet\" Li Lianjie is a Chinese-born Singaporean martial artist, actor, and philanthropist. After three years of training with acclaimed wushu teacher Wu Bin, Li won his first of five men's national championship for the Beijing Wushu Team in 1974.",
         Birth: "1963"
       },
-      Year: "2001" 
+      Year: "2001",
+      ImageURL: "https://www.imdb.com/title/tt0267804/mediaviewer/rm1355569921/",
+      Featured: false 
     },
     { 
       Title: "Ip-Man",
@@ -134,7 +144,9 @@ app.use(bodyParser.json());
         Bio: "Donnie Yen Chi-tan is a Hong Kong actor, filmmaker, martial artist, and action director. He is the recipient of various accolades, including three Golden Horse Awards and five Hong Kong Film Awards.",
         Birth: "1963"
       },
-      Year: "2008" 
+      Year: "2008",
+      ImageURL: "https://www.imdb.com/title/tt1220719/mediaviewer/rm1332823040/?ref_=tt_ov_i",
+      Featured: false 
     },
     { 
       Title: "Ong-Bak",
@@ -152,7 +164,9 @@ app.use(bodyParser.json());
         Bio: "Tatchakorn Yeerum, better known internationally as Tony Jaa and in Thailand as Jaa Phanom, is a Thai martial artist, actor, action choreographer, stuntman, and director.",
         Birth: "1976"
       },
-      Year: "2003" 
+      Year: "2003",
+      ImageURL: "https://www.imdb.com/title/tt0368909/mediaviewer/rm2161200128/?ref_=tt_ov_i",
+      Featured: false 
     },
     {
       Title: "Bloodsport",
@@ -170,7 +184,9 @@ app.use(bodyParser.json());
         Bio: "Jean-Claude Van Damme, born Jean-Claude Camille François Van Varenberg, is a Belgian actor and martial artist known for his action movies. His 1988 film Bloodsport cemented his status as a global action star. He followed it up with a string of successful films in the early 1990s, including Kickboxer, Cyborg, and Timecop. Van Damme's on-screen charisma and martial arts skills made him a favorite among action movie fans.",
         Birth: "1960"
       },
-      Year: "1988"
+      Year: "1988",
+      ImageURL: "https://www.imdb.com/title/tt0092675/mediaviewer/rm934555904/?ref_=tt_ov_i",
+      Featured: false
     },
     {
       Title: "Kung Fu Hustle",
@@ -188,7 +204,9 @@ app.use(bodyParser.json());
         Bio: "Stephen Chow Sing-chi is a Hong Kong filmmaker and former actor, known for his mo lei tau comedy. His career began in television, where he gained recognition through variety shows and TV dramas.",
         Birth: "1962"
       },
-      Year: "2004"
+      Year: "2004",
+      ImageURL: "https://www.imdb.com/title/tt0373074/mediaviewer/rm2223710208/",
+      Featured: false
     },
     {
       Title: "Kung Pow! Enter the Fist",
@@ -206,7 +224,9 @@ app.use(bodyParser.json());
         Bio: "Steven Brent Oedekerk is an American filmmaker, actor and stand-up comedian. He is best known for his collaborations with actor and comedian Jim Carrey and director Tom Shadyac, his series of \"Thumbmation\" shorts and his film Kung Pow! ",
         Birth: "1961"
       },
-      Year: "2002"
+      Year: "2002",
+      ImageURL: "https://www.imdb.com/title/tt0240468/mediaviewer/rm3057194752/?ref_=tt_ov_i",
+      Featured: false
     },
   ];
   
