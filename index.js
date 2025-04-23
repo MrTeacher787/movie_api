@@ -25,6 +25,25 @@ app.use(express.static("public"));
 app.use(myLogger);
 app.use(requestTime);
 app.use(bodyParser.json());
+
+//Users
+let users = [
+  {
+    id: 1,
+    name: "Larry",
+    favoriteMovie: []
+  },
+  {
+    id: 2,
+    name: "Moe",
+    favoriteMovie: ["Kung-Pow: Enter the Fist"]
+  },
+  {
+    id: 3,
+    name: "Curly",
+    favoriteMovie: ["Drunken Master"]
+  },
+]
   
   // my top martial arts movies
   let topMovies = [
@@ -229,14 +248,43 @@ app.use(bodyParser.json());
       Featured: false
     },
   ];
+ 
+  //CREATE (POST a new user)
+app.post("/users", (req, res) => {
+  const newUser = req.body;
+
+  if (newUser.name) {
+    newUser.id = uuid.v4();
+    users.push(newUser);
+    res.status(201).json(newUser)
+  } else {
+    res.status(400).send("Everyone's gotta have a name!")
+  }
+});
+
+//UPDATE (PUT a new username)
+app.put("/users/:id", (req, res) => {
+  const { id } = req.params;
+  const updatedUser = req.body;
+
+  let user = users.find( user => user.id == id );
+
+  if (user) {
+    user.name = updatedUser.name;
+    res.status(200).json(user);
+  } else  {
+    res.status(400).send("That user is not here!")
+  }
   
-// GET a list of '/movies'
+});
+
+// READ (GET a list of '/movies')
 app.get("/movies", (req, res) => {
   // send movie info array as JSON
   res.status(200).json(topMovies);
 });
 
-// GET '/movies' by title
+// READ (GET '/movies' by title)
 app.get("/movies/:title", (req, res) => {
   const { title } = req.params;
   const movie = topMovies.find( movie => movie.Title === title );
@@ -248,7 +296,7 @@ app.get("/movies/:title", (req, res) => {
   }
 });
 
-// GET genre info
+//READ (GET genre info)
 app.get("/movies/genre/:genreName", (req, res) => {
   const { genreName } = req.params;
   const genre = topMovies.find( movie => movie.Genre.Name === genreName ).Genre;
@@ -260,7 +308,7 @@ app.get("/movies/genre/:genreName", (req, res) => {
   }
 });
 
-// GET director info 
+//READ (GET director info) 
 app.get("/movies/director/:directorName", (req, res) => {
   const { directorName } = req.params;
   const director = topMovies.find( movie => movie.Director.Name === directorName ).Director;
