@@ -275,8 +275,21 @@ app.put("/users/:id", (req, res) => {
   } else  {
     res.status(400).send("That user is not here!")
   }
-  
 });
+
+  //CREATE (POST a new movie)
+  app.post("/users/:id/:movieTitle", (req, res) => {
+    const { id, movieTitle } = req.params;
+  
+    let user = users.find( user => user.id == id );
+
+    if (user) {
+      user.favoriteMovie.push(movieTitle);
+      res.status(200).json(user);
+    } else  {
+      res.status(400).send("That user is not here!")
+    }
+  });
 
 // READ (GET a list of '/movies')
 app.get("/movies", (req, res) => {
