@@ -43,7 +43,7 @@ let users = [
     name: "Curly",
     favoriteMovie: ["Drunken Master"]
   },
-]
+];
   
   // my top martial arts movies
   let topMovies = [
@@ -285,11 +285,39 @@ app.put("/users/:id", (req, res) => {
 
     if (user) {
       user.favoriteMovie.push(movieTitle);
-      res.status(200).json(user);
+      res.status(200).send(`${movieTitle} has been added to user ${id}'s array`);
     } else  {
       res.status(400).send("That user is not here!")
     }
   });
+
+    //DELETE (DELETE a movie)
+  app.delete("/users/:id/:movieTitle", (req, res) => {
+    const { id, movieTitle } = req.params;
+    
+    let user = users.find( user => user.id == id );
+  
+    if (user) {
+      user.favoriteMovie = user.favoriteMovie.filter( title => title !== movieTitle );
+      res.status(200).send(`${movieTitle} has been removed from user ${id}'s array.`);
+    } else  {
+      res.status(400).send("That user is not here!")
+    }
+  });
+
+    //DELETE (DELETE a user)
+  app.delete("/users/:id", (req, res) => {
+    const { id } = req.params;
+      
+    let user = users.find( user => user.id == id );
+    
+    if (user) {
+      users = users.filter( user => user.id != id );
+      res.status(200).send(`user ${id} has been deleted.`);
+    } else  {
+      res.status(400).send("That user is not here!")
+    }
+  });    
 
 // READ (GET a list of '/movies')
 app.get("/movies", (req, res) => {
