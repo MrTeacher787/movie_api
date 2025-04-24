@@ -49,6 +49,7 @@ let users = [
   let topMovies = [
     {
       Title: "Enter the Dragon",
+      Description: "A Shaolin martial artist travels to an island fortress to spy on an opium lord - who is also a former monk from his temple - under the guise of attending a fighting tournament.",
       Genre: {
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
@@ -69,6 +70,7 @@ let users = [
     },
     {
       Title: "The Big Boss",
+      Description: "A young Chinese man sworn an oath of non-violence moves to Thailand to work with his cousins in an ice factory, which he discovers to be a front for a sinister heroin-smuggling operation.",
       Genre: {
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
@@ -89,6 +91,7 @@ let users = [
     },
     {
       Title: "Rumble in the Bronx",
+      Description: "A young man visiting and helping his uncle in New York City finds himself forced to fight a street gang and the mob with his martial art skills.",
       Genre: {
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
@@ -109,6 +112,7 @@ let users = [
     },
     {
       Title: "Drunken Master",
+      Description: "Wong Fei-Hung is a mischievous, yet righteous young man, but after a series of incidents, his frustrated father has him disciplined by a master of drunken martial arts.",
       Genre: {
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
@@ -129,6 +133,7 @@ let users = [
     },
     { 
       Title: "The One",
+      Description: "A rogue Multiverse agent goes on a manhunt for alternate versions of himself, getting stronger with each kill. Only the last version of himself, an LASD cop, can stop his crusade before he becomes \"The One\".",
       Genre: {
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
@@ -149,6 +154,7 @@ let users = [
     },
     { 
       Title: "Ip-Man",
+      Description: "During the Japanese invasion of China, a wealthy martial artist is forced to leave his home when his city is occupied. With little means of providing for themselves, Ip Man and the remaining members of the city must find a way to survive.",
       Genre: {
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
@@ -169,6 +175,7 @@ let users = [
     },
     { 
       Title: "Ong-Bak",
+      Description: "When the head of a statue sacred to a village is stolen, a young martial artist goes to the big city and finds himself taking on the underworld to retrieve it.",
       Genre: {
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
@@ -189,6 +196,7 @@ let users = [
     },
     {
       Title: "Bloodsport",
+      Description: "\"Bloodsport\" follows Frank Dux, an American martial artist serving in the military, who decides to leave the army to compete in a martial arts tournament in Hong Kong where fights to the death can occur.",
       Genre: {
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
@@ -209,6 +217,7 @@ let users = [
     },
     {
       Title: "Kung Fu Hustle",
+      Description: "In Shanghai, China in the 1940s, a wannabe gangster aspires to join the notorious \"Axe Gang\" while residents of a housing complex exhibit extraordinary powers in defending their turf.",
       Genre: {
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
@@ -229,6 +238,7 @@ let users = [
     },
     {
       Title: "Kung Pow! Enter the Fist",
+      Description: "A rough-around-the-edges martial arts master seeks revenge for his parents' death.",
       Genre: {
         Name: "Comedy",
         Description: "The comedy genre is defined by events that are intended to make someone laugh, no matter if the story is macabre, droll, or zany. Comedy can be found in most movies, but if the majority of the film is intended to be a comedy you may safely place it in this genre. The best comedy movies range throughout this entire spectrum of humor."
