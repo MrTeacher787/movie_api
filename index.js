@@ -57,7 +57,8 @@ let users = [
       Director: {
         Name: "Robert Clouse",
         Bio: "Robert Clouse was an American film director and producer, known primarily for his work in the action/adventure and martial arts genres. He died on February 4, 1997, in Oregon of kidney failure. Clouse directed Bruce Lee in Lee's second English-speaking film starring role, 1973's Enter the Dragon.",
-        Birth: "1928"
+        Birth: "1928",
+        Death: "1997"
       },
       Starring: {
         Name: "Bruce Lee",
@@ -78,7 +79,8 @@ let users = [
       Director: {
         Name: "Lo Wei, Wu Chia-Hsiang",
         Bio: "Lo Wei was a Hong Kong film director and actor best known for launching the martial arts film careers of both Bruce Lee, in The Big Boss and Fist of Fury, and Jackie Chan, in New Fist of Fury.",
-        Birth: "1918"
+        Birth: "1918",
+        Death: "1996"
       },
       Starring: {
         Name: "Bruce Lee",
@@ -99,7 +101,8 @@ let users = [
       Director: {
         Name: "Stanley Tong",
         Bio: "Stanley Tong is a Hong Kong film director, producer, stunt choreographer, screenwriter, entrepreneur and philanthropist. He is known for directing action-adventure films, including several with Jackie Chan.",
-        Birth: "1960"
+        Birth: "1960",
+        Death: "still alive"
       },
       Starring: {
         Name: "Jackie Chan",
@@ -120,7 +123,8 @@ let users = [
       Director: {
         Name: "Yuen Woo-ping",
         Bio: "Yuen Woo-ping is a Hong Kong martial arts choreographer and film director who worked in Hong Kong action cinema and later Hollywood films. He is one of the inductees on the Avenue of Stars in Hong Kong. Yuen is also a son of Yuen Siu-tien, a martial arts film actor.",
-        Birth: "1945"
+        Birth: "1945",
+        Death: "still alive"
       },
       Starring: {
         Name: "Jackie Chan",
@@ -141,7 +145,8 @@ let users = [
       Director: {
         Name: "James Wong",
         Bio: "James Wong is an American television and film director, screenwriter and producer. He is known for co-writing episodes of the Fox science fiction supernatural drama series The X-Files with his writing partner, Glen Morgan. Morgan and Wong are founders of the Hard Eight Pictures and co-created Space: Above and Beyond.",
-        Birth: "1959"
+        Birth: "1959",
+        Death: "still alive"
       }, 
       Starring: {
         Name: "Jet Li",
@@ -162,7 +167,8 @@ let users = [
       Director: {
         Name: "Wilson Yip",
         Bio: "Wilson Yip Wai-Shun is a Hong Kong actor, filmmaker and screenwriter. His films include Bio Zombie, The White Dragon, SPL: Sha Po Lang, Dragon Tiger Gate, Flash Point and the Ip Man series.",
-        Birth: "1964"
+        Birth: "1964",
+        Death: "still alive"
       }, 
       Starring: {
         Name: "Donnie Yen",
@@ -183,7 +189,8 @@ let users = [
       Director: {
         Name: "Prachya Pinkaew", 
         Bio: "Prachya Pinkaew is a Thai film director, film producer and screenwriter. His films include Ong-Bak: Muay Thai Warrior and Tom-Yum-Goong, both martial arts films starring Tony Jaa.",
-        Birth: "1962"
+        Birth: "1962",
+        Death: "still alive"
       },
       Starring: {
         Name: "Tony Jaa",
@@ -204,7 +211,8 @@ let users = [
       Director: {
         Name: "Newt Arnold",
         Bio: "Newt Arnold was an American film director, producer and screenwriter. Arnold directed Bloodsport, which was released in 1988 and has since become a cult film, as well as several other screen works.",
-        Birth: "1922"
+        Birth: "1922",
+        Death: "2000"
       },
       Starring: {
         Name: "Jean Claude Van Damme",
@@ -225,7 +233,8 @@ let users = [
       Director: {
         Name: "Stephen Chow",
         Bio: "Stephen Chow Sing-chi is a Hong Kong filmmaker and former actor, known for his mo lei tau comedy. His career began in television, where he gained recognition through variety shows and TV dramas.",
-        Birth: "1962"
+        Birth: "1962",
+        Death: "still alive"
       },
       Starring: {
         Name: "Stephen Chow",
@@ -246,7 +255,8 @@ let users = [
       Director: {
         Name: "Steve Oedekerk",
         Bio: "Steven Brent Oedekerk is an American filmmaker, actor and stand-up comedian. He is best known for his collaborations with actor and comedian Jim Carrey and director Tom Shadyac, his series of \"Thumbmation\" shorts and his film Kung Pow!",
-        Birth: "1961"
+        Birth: "1961",
+        Death: "still alive"
       },
       Starring: {
         Name: "Steve Oedekerk",
