@@ -3,16 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOCUMENTATION</title>
+    <title>kickFlix API Documentation</title>
+
+    <style>
+      
+      body {
+        font-family: 'Courier New', Courier, monospace, sans-serif;
+        padding: 20px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 40px;
+      }
+      th, td {
+        border: 2px solid #0c0c0c;
+        padding: 10px;
+        text-align: left;
+      }
+      th {
+        background-color: #f4f4f4;
+      }
+      
+    </style>
+
 </head>
 <body>
   <h1>
-    Documentation Page
+    API Documentation Page
   </h1>
+
   <br>
-  <h3>
+
+  <h2>
     Web app title: kickFlix
-  </h3>
+  </h2>
+
   <p>
     This achievement's project is a server-side, web application with the purpose of being a
     martial arts movie library. Hence the name "kickFlix"! This web app will provide users with
@@ -20,6 +46,137 @@
     arts genre). Additionally, users will be able to sign-up, update their personal information,
     and create a list of their favorite martial arts movies.
   </p>
+
   <br>
+
+  <h2>
+    Movie Endpoints
+  </h2>
+
+  <table>
+
+    <tr>
+      <th>Description</th>
+      <th>Method</th>
+      <th>Endpoint</th>
+      <th>Query Parameters</th>
+      <th>Request Body (example)</th>
+      <th>Response</th>
+    </tr>
+
+    <tr>
+      <td>Returns a list of all movies</td>
+      <td>GET</td>
+      <td>/movies</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Array of movie objects with info.</td>
+    </tr>
+
+    <tr>
+      <td>Returns movie info. by title</td>
+      <td>GET</td>
+      <td>/movies/:title</td>
+      <td>title (movie title)</td>
+      <td>None</td>
+      <td>Movie object with title, genre, director, starring, year, imageURL, featured</td>
+    </tr>
+
+    <tr>
+      <td>Returns genre description by it's name</td>
+      <td>GET</td>
+      <td>/genre/:name</td>
+      <td>name (genre name)</td>
+      <td>None</td>
+      <td>Genre object with name and description</td>
+    </tr>
+
+    <tr>
+      <td>Returns director info. by name</td>
+      <td>GET</td>
+      <td>/directors/:name</td>
+      <td>name (director's name)</td>
+      <td>None</td>
+      <td>Director object with name, bio, and birth year</td>
+    </tr>
+    
+  </table>
+
+  <br>
+
+  <h2>
+    User Endpoints
+  </h2>
+
+  <table>
+    <tr>
+      <th>Description</th>
+      <th>Method</th>
+      <th>Endpoint</th>
+      <th>Query Parameters</th>
+      <th>Request Body (example)</th>
+      <th>Response</th>
+    </tr>
+
+    <tr>
+      <td>Create a new user </td>
+      <td>POST</td>
+      <td>/users</td>
+      <td>None</td>
+      <td>
+        Format: JSON <br>
+        Example: <br>
+        { <br>
+          "name": "Lucy", <br>
+          "favoriteMovie": ["The Forbidden Kingdom"] <br>
+        }
+      </td>
+      <td>Created user object, or error message</td>
+    </tr>
+
+    <tr>
+      <td>Update user's info.</td>
+      <td>PUT</td>
+      <td>/users/:id</td>
+      <td>username (user's id)</td>
+      <td>
+        { <br>
+          "id": 1, <br>
+          "name": "Larry Updated Name", <br>
+          "favoriteMovie": [] <br>
+        }
+      </td>
+      <td>Updated user object info.</td>
+    </tr>
+
+    <tr>
+      <td>Add movie to user's favorites</td>
+      <td>POST</td>
+      <td>/users/:id/:movieTitle</td>
+      <td>username (id and movie title)</td>
+      <td>None</td>
+      <td>200 status and message: "Movie has been added to user's array."</td>
+    </tr>
+
+    <tr>
+      <td>Remove a movie from user's favorites</td>
+      <td>DELETE</td>
+      <td>/users/:id/:movieTitle</td>
+      <td>username (id and movie title)</td>
+      <td>None</td>
+      <td>200 status and message: "Movie has been removed from user's array."</td>
+    </tr>
+
+    <tr>
+      <td>De-register a user</td>
+      <td>DELETE</td>
+      <td>/users/:id</td>
+      <td>username</td>
+      <td>None</td>
+      <td>200 status and message: "User has been deleted."</td>
+    </tr>
+
+  </table>
+
 </body>
 </html>
