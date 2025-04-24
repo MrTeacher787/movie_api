@@ -285,7 +285,7 @@ app.put("/users/:id", (req, res) => {
 
     if (user) {
       user.favoriteMovie.push(movieTitle);
-      res.status(200).send(`${movieTitle} has been added to user ${id}'s array`);
+      res.status(200).send(`${movieTitle} has been added to user ${id}'s array.`);
     } else  {
       res.status(400).send("That user is not here!")
     }
