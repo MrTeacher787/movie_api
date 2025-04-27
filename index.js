@@ -48,13 +48,16 @@ let users = [
   // my top martial arts movies
   let topMovies = [
     {
+      id: 1,
       Title: "Enter the Dragon",
       Description: "A Shaolin martial artist travels to an island fortress to spy on an opium lord - who is also a former monk from his temple - under the guise of attending a fighting tournament.",
       Genre: {
+        id: 1,
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       },
       Director: {
+        id: 1,
         Name: "Robert Clouse",
         Bio: "Robert Clouse was an American film director and producer, known primarily for his work in the action/adventure and martial arts genres. He died on February 4, 1997, in Oregon of kidney failure. Clouse directed Bruce Lee in Lee's second English-speaking film starring role, 1973's Enter the Dragon.",
         Birth: "1928",
@@ -70,13 +73,16 @@ let users = [
       Featured: false
     },
     {
+      id: 2,
       Title: "The Big Boss",
       Description: "A young Chinese man sworn an oath of non-violence moves to Thailand to work with his cousins in an ice factory, which he discovers to be a front for a sinister heroin-smuggling operation.",
       Genre: {
+        id: 1,
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       },
       Director: {
+        id: 2,
         Name: "Lo Wei, Wu Chia-Hsiang",
         Bio: "Lo Wei was a Hong Kong film director and actor best known for launching the martial arts film careers of both Bruce Lee, in The Big Boss and Fist of Fury, and Jackie Chan, in New Fist of Fury.",
         Birth: "1918",
@@ -92,13 +98,16 @@ let users = [
       Featured: false
     },
     {
+      id: 3,
       Title: "Rumble in the Bronx",
       Description: "A young man visiting and helping his uncle in New York City finds himself forced to fight a street gang and the mob with his martial art skills.",
       Genre: {
+        id: 1,
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       },
       Director: {
+        id: 3,
         Name: "Stanley Tong",
         Bio: "Stanley Tong is a Hong Kong film director, producer, stunt choreographer, screenwriter, entrepreneur and philanthropist. He is known for directing action-adventure films, including several with Jackie Chan.",
         Birth: "1960",
@@ -114,13 +123,16 @@ let users = [
       Featured: false
     },
     {
+      id: 4,
       Title: "Drunken Master",
       Description: "Wong Fei-Hung is a mischievous, yet righteous young man, but after a series of incidents, his frustrated father has him disciplined by a master of drunken martial arts.",
       Genre: {
+        id: 1,
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       },
       Director: {
+        id: 4,
         Name: "Yuen Woo-ping",
         Bio: "Yuen Woo-ping is a Hong Kong martial arts choreographer and film director who worked in Hong Kong action cinema and later Hollywood films. He is one of the inductees on the Avenue of Stars in Hong Kong. Yuen is also a son of Yuen Siu-tien, a martial arts film actor.",
         Birth: "1945",
@@ -136,13 +148,16 @@ let users = [
       Featured: false
     },
     { 
+      id: 5,
       Title: "The One",
       Description: "A rogue Multiverse agent goes on a manhunt for alternate versions of himself, getting stronger with each kill. Only the last version of himself, an LASD cop, can stop his crusade before he becomes \"The One\".",
       Genre: {
+        id: 1,
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       }, 
       Director: {
+        id: 5,
         Name: "James Wong",
         Bio: "James Wong is an American television and film director, screenwriter and producer. He is known for co-writing episodes of the Fox science fiction supernatural drama series The X-Files with his writing partner, Glen Morgan. Morgan and Wong are founders of the Hard Eight Pictures and co-created Space: Above and Beyond.",
         Birth: "1959",
@@ -158,13 +173,16 @@ let users = [
       Featured: false 
     },
     { 
+      id: 6,
       Title: "Ip-Man",
       Description: "During the Japanese invasion of China, a wealthy martial artist is forced to leave his home when his city is occupied. With little means of providing for themselves, Ip Man and the remaining members of the city must find a way to survive.",
       Genre: {
+        id: 1,
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       }, 
       Director: {
+        id: 6,
         Name: "Wilson Yip",
         Bio: "Wilson Yip Wai-Shun is a Hong Kong actor, filmmaker and screenwriter. His films include Bio Zombie, The White Dragon, SPL: Sha Po Lang, Dragon Tiger Gate, Flash Point and the Ip Man series.",
         Birth: "1964",
@@ -180,13 +198,16 @@ let users = [
       Featured: false 
     },
     { 
+      id: 7,
       Title: "Ong-Bak",
       Description: "When the head of a statue sacred to a village is stolen, a young martial artist goes to the big city and finds himself taking on the underworld to retrieve it.",
       Genre: {
+        id: 1,
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       }, 
       Director: {
+        id: 7,
         Name: "Prachya Pinkaew", 
         Bio: "Prachya Pinkaew is a Thai film director, film producer and screenwriter. His films include Ong-Bak: Muay Thai Warrior and Tom-Yum-Goong, both martial arts films starring Tony Jaa.",
         Birth: "1962",
@@ -202,13 +223,16 @@ let users = [
       Featured: false 
     },
     {
+      id: 8,
       Title: "Bloodsport",
       Description: "\"Bloodsport\" follows Frank Dux, an American martial artist serving in the military, who decides to leave the army to compete in a martial arts tournament in Hong Kong where fights to the death can occur.",
       Genre: {
+        id: 1,
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       },
       Director: {
+        id: 8,
         Name: "Newt Arnold",
         Bio: "Newt Arnold was an American film director, producer and screenwriter. Arnold directed Bloodsport, which was released in 1988 and has since become a cult film, as well as several other screen works.",
         Birth: "1922",
@@ -224,13 +248,16 @@ let users = [
       Featured: false
     },
     {
+      id: 9,
       Title: "Kung Fu Hustle",
       Description: "In Shanghai, China in the 1940s, a wannabe gangster aspires to join the notorious \"Axe Gang\" while residents of a housing complex exhibit extraordinary powers in defending their turf.",
       Genre: {
+        id: 1,
         Name: "Action",
         Description: "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger."
       },
       Director: {
+        id: 9,
         Name: "Stephen Chow",
         Bio: "Stephen Chow Sing-chi is a Hong Kong filmmaker and former actor, known for his mo lei tau comedy. His career began in television, where he gained recognition through variety shows and TV dramas.",
         Birth: "1962",
@@ -246,13 +273,16 @@ let users = [
       Featured: false
     },
     {
+      id: 10,
       Title: "Kung Pow! Enter the Fist",
       Description: "A rough-around-the-edges martial arts master seeks revenge for his parents' death.",
       Genre: {
+        id: 2,
         Name: "Comedy",
         Description: "The comedy genre is defined by events that are intended to make someone laugh, no matter if the story is macabre, droll, or zany. Comedy can be found in most movies, but if the majority of the film is intended to be a comedy you may safely place it in this genre. The best comedy movies range throughout this entire spectrum of humor."
       },
       Director: {
+        id: 10,
         Name: "Steve Oedekerk",
         Bio: "Steven Brent Oedekerk is an American filmmaker, actor and stand-up comedian. He is best known for his collaborations with actor and comedian Jim Carrey and director Tom Shadyac, his series of \"Thumbmation\" shorts and his film Kung Pow!",
         Birth: "1961",
