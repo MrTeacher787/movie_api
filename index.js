@@ -323,6 +323,88 @@ let topMovies = [
       "https://www.imdb.com/title/tt0240468/mediaviewer/rm3057194752/?ref_=tt_ov_i",
     Featured: false,
   },
+  {
+    id: 11,
+    Title: "Kung Fu Panda",
+    Description:
+    "To everyone\'s surprise, including his own, Po, an overweight, clumsy panda, is chosen as protector of the Valley of Peace. His suitability will soon be tested as the valley\'s arch-enemy is on his way.", 
+    Genre: {
+      id: 3,
+      Name: "Animated",
+      Description:
+        "The animation genre is defined by inanimate objects being manipulated to appear as though they are living. This can be done in many different ways and can incorporate any other genre and sub-genre.",
+    },
+    Director: {
+      id: 11,
+      Name: "Mark Osborne",
+      Bio: "Mark Randolph Osborne is an American film director, writer, producer and animator from Trenton, New Jersey who is known for co-directing the Oscar nominated Kung Fu Panda (2008) and The SpongeBob SquarePants Movie (2004) (the live-action sequences), as well as directing The Little Prince (2015) himself.",
+      Birth: "1970",
+      Death: "still alive",
+    },
+    Starring: {
+      Name: "Jack Black",
+      Bio: "Thomas Jacob \"Jack\" Black was born on August 28, 1969 in Santa Monica, California and raised in Hermosa Beach, California to Judith Love Cohen & Thomas William Black, both satellite engineers. Although he was just a background voice in his first film, Jack's appearances in such television shows as The X-Files (1993), his breakthrough performance in High Fidelity (2000) & his rock-comedy band, Tenacious D have created an ever-growing cult following.",
+      Birth: "1969",
+    },
+    Year: "2008",
+    ImageURL:
+      "https://www.imdb.com/title/tt0441773/mediaviewer/rm3096332288/?ref_=tt_ov_i",
+    Featured: false,
+  },
+  {
+    id: 12,
+    Title: "Shaolin Soccer",
+    Description:
+      "A young Shaolin follower reunites with his discouraged brothers to form a soccer team using their martial art skills to their advantage.",
+    Genre: {
+      id: 1,
+      Name: "Action",
+      Description:
+        "Movies in the action genre are defined by risk and stakes. While many movies may feature an action sequence, to be appropriately categorized inside the action genre, the bulk of the content must be action-oriented, including fight scenes, stunts, car chases, and general danger.",
+    },
+    Director: {
+      id: 9,
+      Name: "Stephen Chow",
+      Bio: "Stephen Chow Sing-chi is a Hong Kong filmmaker and former actor, known for his mo lei tau comedy. His career began in television, where he gained recognition through variety shows and TV dramas.",
+      Birth: "1962",
+      Death: "still alive",
+    },
+    Starring: {
+      Name: "Stephen Chow",
+      Bio: "Stephen Chow Sing-chi is a Hong Kong filmmaker and former actor, known for his mo lei tau comedy. His career began in television, where he gained recognition through variety shows and TV dramas.",
+      Birth: "1962",
+    },
+    Year: "2001",
+    ImageURL: "https://www.imdb.com/title/tt0286112/mediaviewer/rm383716353/?ref_=tt_ov_i",
+    Featured: false,
+  },
+  {
+    id: 13,
+    Title: "From Beijing with Love",
+    Description:
+      "A Chinese spy who's been out of service for ten years whilst making a living as a butcher is sent to Hong Kong to locate a stolen Tyrannosaurus rex skull.",
+    Genre: {
+      id: 4,
+      Name: "Parody",
+      Description:
+        "A parody mocks and specifically targets a single piece of art or connected body of work. A parody is more precise, and more limited.",
+    },
+    Director: {
+      id: 9,
+      Name: "Stephen Chow",
+      Bio: "Stephen Chow Sing-chi is a Hong Kong filmmaker and former actor, known for his mo lei tau comedy. His career began in television, where he gained recognition through variety shows and TV dramas.",
+      Birth: "1962",
+      Death: "still alive",
+    },
+    Starring: {
+      Name: "Stephen Chow",
+      Bio: "Stephen Chow Sing-chi is a Hong Kong filmmaker and former actor, known for his mo lei tau comedy. His career began in television, where he gained recognition through variety shows and TV dramas.",
+      Birth: "1962",
+    },
+    Year: "1994",
+    ImageURL: "https://www.imdb.com/title/tt0109962/mediaviewer/rm1730228993/",
+    Featured: false,
+  },
 ];
 
 //CREATE (POST a new user)
