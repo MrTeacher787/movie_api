@@ -177,7 +177,7 @@ let topMovies = [
     },
     Starring: {
       Name: "Jet Li",
-      Bio: '"Jet" Li Lianjie is a Chinese-born Singaporean martial artist, actor, and philanthropist. After three years of training with acclaimed wushu teacher Wu Bin, Li won his first of five men\'s national championship for the Beijing Wushu Team in 1974.',
+      Bio: "\"Jet\" Li Lianjie is a Chinese-born Singaporean martial artist, actor, and philanthropist. After three years of training with acclaimed wushu teacher Wu Bin, Li won his first of five men\'s national championship for the Beijing Wushu Team in 1974.",
       Birth: "1963",
     },
     Year: "2001",
