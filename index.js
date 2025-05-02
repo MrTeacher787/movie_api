@@ -343,7 +343,7 @@ let topMovies = [
     },
     Starring: {
       Name: "Jack Black",
-      Bio: "Thomas Jacob \"Jack\" Black was born on August 28, 1969 in Santa Monica, California and raised in Hermosa Beach, California to Judith Love Cohen & Thomas William Black, both satellite engineers. Although he was just a background voice in his first film, Jack's appearances in such television shows as The X-Files (1993), his breakthrough performance in High Fidelity (2000) & his rock-comedy band, Tenacious D have created an ever-growing cult following.",
+      Bio: "Thomas Jacob \"Jack\" Black was born on August 28, 1969 in Santa Monica, California and raised in Hermosa Beach, California to Judith Love Cohen and Thomas William Black, both satellite engineers. Although he was just a background voice in his first film, Jack's appearances in such television shows as The X-Files (1993), his breakthrough performance in High Fidelity (2000) and his rock-comedy band, Tenacious D have created an ever-growing cult following.",
       Birth: "1969",
     },
     Year: "2008",
