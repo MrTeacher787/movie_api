@@ -66,6 +66,7 @@ let topMovies = [
       Death: "1997",
     },
     Starring: {
+      id: 1,
       Name: "Bruce Lee",
       Bio: "Bruce Lee was a Hong Kong-American actor, martial artist, and philosopher who helped make martial arts movies popular in the 1970s. Born Lee Jun-fan in San Francisco, he became a child actor in Hong Kong before returning to the US to teach martial arts. Lee is known for his roles in Enter the Dragon and The Chinese Connection. He's considered one of the most influential martial artists and a cultural icon.",
       Birth: "1940",
@@ -94,6 +95,7 @@ let topMovies = [
       Death: "1996",
     },
     Starring: {
+      id: 1,
       Name: "Bruce Lee",
       Bio: "Bruce Lee was a Hong Kong-American actor, martial artist, and philosopher who helped make martial arts movies popular in the 1970s. Born Lee Jun-fan in San Francisco, he became a child actor in Hong Kong before returning to the US to teach martial arts. Lee is known for his roles in Enter the Dragon and The Chinese Connection. He's considered one of the most influential martial artists and a cultural icon.",
       Birth: "1940",
@@ -121,6 +123,7 @@ let topMovies = [
       Death: "still alive",
     },
     Starring: {
+      id: 2,
       Name: "Jackie Chan",
       Bio: "Fang Shilong is a Hong Kong-born actor, stuntman, martial artist, and filmmaker. Chan has starred in action-packed films like The Karate Kid, Rumble in the Bronx, and Armour of God. He has stars on the Hollywood Walk of Fame and the Hong Kong SRA Avenue of Stars. Chan is also a UNICEF Goodwill Ambassador and philanthropist who advocates for conservation, disaster relief, and animal welfare.",
       Birth: "1954",
@@ -149,6 +152,7 @@ let topMovies = [
       Death: "still alive",
     },
     Starring: {
+      id: 2,
       Name: "Jackie Chan",
       Bio: "Fang Shilong is a Hong Kong-born actor, stuntman, martial artist, and filmmaker. Chan has starred in action-packed films like The Karate Kid, Rumble in the Bronx, and Armour of God. He has stars on the Hollywood Walk of Fame and the Hong Kong SRA Avenue of Stars. Chan is also a UNICEF Goodwill Ambassador and philanthropist who advocates for conservation, disaster relief, and animal welfare.",
       Birth: "1954",
@@ -176,6 +180,7 @@ let topMovies = [
       Death: "still alive",
     },
     Starring: {
+      id: 3,
       Name: "Jet Li",
       Bio: "\"Jet\" Li Lianjie is a Chinese-born Singaporean martial artist, actor, and philanthropist. After three years of training with acclaimed wushu teacher Wu Bin, Li won his first of five men\'s national championship for the Beijing Wushu Team in 1974.",
       Birth: "1963",
@@ -203,6 +208,7 @@ let topMovies = [
       Death: "still alive",
     },
     Starring: {
+      id: 4,
       Name: "Donnie Yen",
       Bio: "Donnie Yen Chi-tan is a Hong Kong actor, filmmaker, martial artist, and action director. He is the recipient of various accolades, including three Golden Horse Awards and five Hong Kong Film Awards.",
       Birth: "1963",
@@ -231,6 +237,7 @@ let topMovies = [
       Death: "still alive",
     },
     Starring: {
+      id: 5,
       Name: "Tony Jaa",
       Bio: "Tatchakorn Yeerum, better known internationally as Tony Jaa and in Thailand as Jaa Phanom, is a Thai martial artist, actor, action choreographer, stuntman, and director.",
       Birth: "1976",
@@ -259,6 +266,7 @@ let topMovies = [
       Death: "2000",
     },
     Starring: {
+      id: 6,
       Name: "Jean Claude Van Damme",
       Bio: "Jean-Claude Van Damme, born Jean-Claude Camille François Van Varenberg, is a Belgian actor and martial artist known for his action movies. His 1988 film Bloodsport cemented his status as a global action star. He followed it up with a string of successful films in the early 1990s, including Kickboxer, Cyborg, and Timecop. Van Damme's on-screen charisma and martial arts skills made him a favorite among action movie fans.",
       Birth: "1960",
@@ -287,6 +295,7 @@ let topMovies = [
       Death: "still alive",
     },
     Starring: {
+      id: 7,
       Name: "Stephen Chow",
       Bio: "Stephen Chow Sing-chi is a Hong Kong filmmaker and former actor, known for his mo lei tau comedy. His career began in television, where he gained recognition through variety shows and TV dramas.",
       Birth: "1962",
@@ -314,6 +323,7 @@ let topMovies = [
       Death: "still alive",
     },
     Starring: {
+      id: 8,
       Name: "Steve Oedekerk",
       Bio: 'Steven Brent Oedekerk is an American filmmaker, actor and stand-up comedian. He is best known for his collaborations with actor and comedian Jim Carrey and director Tom Shadyac, his series of "Thumbmation" shorts and his film Kung Pow! ',
       Birth: "1961",
@@ -342,6 +352,7 @@ let topMovies = [
       Death: "still alive",
     },
     Starring: {
+      id: 9,
       Name: "Jack Black",
       Bio: "Thomas Jacob \"Jack\" Black was born on August 28, 1969 in Santa Monica, California and raised in Hermosa Beach, California to Judith Love Cohen and Thomas William Black, both satellite engineers. Although he was just a background voice in his first film, Jack's appearances in such television shows as The X-Files (1993), his breakthrough performance in High Fidelity (2000) and his rock-comedy band, Tenacious D have created an ever-growing cult following.",
       Birth: "1969",
@@ -370,6 +381,7 @@ let topMovies = [
       Death: "still alive",
     },
     Starring: {
+      id: 7,
       Name: "Stephen Chow",
       Bio: "Stephen Chow Sing-chi is a Hong Kong filmmaker and former actor, known for his mo lei tau comedy. His career began in television, where he gained recognition through variety shows and TV dramas.",
       Birth: "1962",
@@ -397,6 +409,7 @@ let topMovies = [
       Death: "still alive",
     },
     Starring: {
+      id: 7,
       Name: "Stephen Chow",
       Bio: "Stephen Chow Sing-chi is a Hong Kong filmmaker and former actor, known for his mo lei tau comedy. His career began in television, where he gained recognition through variety shows and TV dramas.",
       Birth: "1962",
