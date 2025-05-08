@@ -74,7 +74,7 @@ let topMovies = [
     Year: "1973",
     ImageURL:
       "https://www.imdb.com/title/tt0070034/mediaviewer/rm638853120/?ref_=tt_ov_i",
-    Featured: false,
+    Featured: true,
   },
   {
     id: 2,
