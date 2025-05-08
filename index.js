@@ -89,7 +89,7 @@ let topMovies = [
     },
     Director: {
       id: 2,
-      Name: "Lo Wei, Wu Chia-Hsiang",
+      Name: "Lo Wei",
       Bio: "Lo Wei was a Hong Kong film director and actor best known for launching the martial arts film careers of both Bruce Lee, in The Big Boss and Fist of Fury, and Jackie Chan, in New Fist of Fury.",
       Birth: "1918",
       Death: "1996",
