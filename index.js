@@ -646,4 +646,4 @@ app.listen(8080, () => {
   console.log("Your app is listening on port 8080.");
 });
 
-mongoose.connect('mongodb://localhost:27017/dbname', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/kickFlixDB', { useNewUrlParser: true, useUnifiedTopology: true });
