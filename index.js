@@ -1,17 +1,36 @@
+const express = require("express");
+const bodyParser = require("body-parser");
+const uuid = require("uuid");
+
+const morgan = require("morgan");
+const app = express();
 const mongoose = require('mongoose');
 const Models = require('./models.js');
 
 const Movies = Models.Movie;
 const Users = Models.Users;
+const Genres = Models.Genre;
+const Directors = Models.Director;
 
-const express = require("express");
-const morgan = require("morgan");
-const bodyParser = require("body-parser");
-const uuid = require("uuid");
 
-const app = express();
+mongoose.connect('mongodb://localhost:27017/kickFlixDB', { 
+  useNewUrlParser: true, 
+  useUnifiedTopology: true 
+});
+
+app.use(bodyParser.json());
+// use Morgan for HTTP requests
+app.use(morgan("common"));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+
+
+// use static files from the "public" directory
+app.use(express.static("public"));
+app.use(myLogger);
+app.use(requestTime);
 
 // logs request info.
 let myLogger = (req, res, next) => {
@@ -24,15 +43,6 @@ let requestTime = (req, res, next) => {
   req.requestTime = Date.now();
   next();
 };
-
-// use Morgan for HTTP requests
-app.use(morgan("common"));
-
-// use static files from the "public" directory
-app.use(express.static("public"));
-app.use(myLogger);
-app.use(requestTime);
-app.use(bodyParser.json());
 
 //Users
 let users = [
@@ -645,5 +655,3 @@ app.use((err, req, res, next) => {
 app.listen(8080, () => {
   console.log("Your app is listening on port 8080.");
 });
-
-mongoose.connect('mongodb://localhost:27017/kickFlixDB', { useNewUrlParser: true, useUnifiedTopology: true });
