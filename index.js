@@ -25,25 +25,6 @@ app.use(morgan("common"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-
-
-// use static files from the "public" directory
-app.use(express.static("public"));
-app.use(myLogger);
-app.use(requestTime);
-
-// logs request info.
-let myLogger = (req, res, next) => {
-  console.log(req.url);
-  next();
-};
-
-// logs request time and date
-let requestTime = (req, res, next) => {
-  req.requestTime = Date.now();
-  next();
-};
-
 //Users
 let users = [
   {
