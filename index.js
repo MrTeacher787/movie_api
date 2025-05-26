@@ -479,21 +479,6 @@ app.post('/users', async (req, res) => {
     });
 });
 
-//UPDATE (PUT a new username)
-app.put("/users/:id", (req, res) => {
-  const { id } = req.params;
-  const updatedUser = req.body;
-
-  let user = users.find((user) => user.id == id);
-
-  if (user) {
-    user.name = updatedUser.name;
-    res.status(200).json(user);
-  } else {
-    res.status(400).send("That user is not here!");
-  }
-});
-
 // Update a user's info, by username
 /* We'll expect JSON in this format:
 {
