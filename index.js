@@ -532,7 +532,7 @@ app.get('/movies/:title', async (req, res) => {
 });
 
 // movie by genre (READ)
-app.get('/movies/genre/:genre', async (req, res) => {
+app.get('/movies/genre/:name', async (req, res) => {
     await Movies.findOne({ "Genre.Name": req.params.genre })
     .then((movie) => {
         res.json(movie);
