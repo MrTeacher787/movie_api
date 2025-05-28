@@ -110,6 +110,15 @@
       <td>None</td>
       <td>Director object with name, bio, and birth year</td>
     </tr>
+
+    <tr>
+      <td>Returns movies made by director</td>
+      <td>GET</td>
+      <td>/movies/directors/:name</td>
+      <td>movies (director's name)</td>
+      <td>None</td>
+      <td>Movies made by director</td>
+    </tr>
     
   </table>
 
@@ -183,8 +192,17 @@
       <td>POST</td>
       <td>/users/:id/:movieTitle</td>
       <td>username (id and movie title)</td>
-      <td>None</td>
-      <td>Message: "Movie has been added to user's array."</td>
+      <td>
+        { <br>
+          "id": 1, <br>
+          "Username": "Larry", <br>
+          "Password": "larrythestooge1", <br>
+          "Email": "larrythestooge1@example.com", <br>
+          "Birthday": "1970-01-01", <br>
+          "favoriteMovie": [] <br>
+        } 
+      </td>
+      <td>Updated document is returned.</td>
     </tr>
 
     <tr>
@@ -193,7 +211,7 @@
       <td>/users/:id/:movieTitle</td>
       <td>username (id and movie title)</td>
       <td>None</td>
-      <td>Message: "Movie has been removed from user's array."</td>
+      <td>Updated user info is returned.</td>
     </tr>
 
     <tr>
@@ -202,7 +220,7 @@
       <td>/users/:id</td>
       <td>username (user's id)</td>
       <td>None</td>
-      <td>Message: "User has been deleted."</td>
+      <td>Message: "User was deleted."</td>
     </tr>
 
   </table>
