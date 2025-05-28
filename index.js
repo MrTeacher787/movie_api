@@ -505,7 +505,7 @@ app.get('/movies', async (req, res) => {
 app.get('/movies/:title', async (req, res) => {
     await Movies.findOne({ Title: req.params.title})
         .then((movie) => {
-            res.json(movie);
+            res.status(201).json(movie);
         })
         .catch((err) => {
             console.error(err);
