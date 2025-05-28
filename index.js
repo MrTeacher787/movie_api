@@ -438,6 +438,24 @@ let topMovies = [
   },
 ];
 
+// GET requests
+app.get("/", (req, res) => {
+  let responseText = "Welcome to my kickin' app!";
+  responseText += "<small>Requested at: " + req.requestTime + "</small>";
+  res.send(responseText);
+});
+
+app.get("/secreturl", (req, res) => {
+  let responseText =
+    "You were not supposed to find this secret url with super top-secret content. It's secret!";
+  responseText += "<small>Requested at: " + req.requestTime + "</small>";
+  res.send(responseText);
+});
+
+app.get("/documentation", (req, res) => {
+  res.sendFile("public/documentation.html", { root: __dirname });
+});
+
 //Add a user (CREATE)
 app.post('/users', async (req, res) => {
   await Users.findOne({ Username: req.body.Username })
@@ -575,7 +593,7 @@ app.post('/users/:Username/movies/:MovieID', async (req, res) => {
     });
 });
 
-// delete a user by username
+// delete a user by username (DELETE)
 app.delete('/users/:Username', async (req, res) => {
   await Users.findOneAndRemove({ Username: req.params.Username })
     .then((user) => {
@@ -591,7 +609,7 @@ app.delete('/users/:Username', async (req, res) => {
     });
 });
 
-// delete a movie from favorites
+// delete a movie from favorites (DELETE)
 app.delete('/users/:Username/movies/:MovieID', async (req, res) => {
   await Users.findOneAndUpdate({ Username: req.params.Username },
     {
@@ -605,24 +623,6 @@ app.delete('/users/:Username/movies/:MovieID', async (req, res) => {
       console.error(err);
       res.status(500).send('Error: ' + err);
     });
-});
-
-// GET requests
-app.get("/", (req, res) => {
-  let responseText = "Welcome to my kickin' app!";
-  responseText += "<small>Requested at: " + req.requestTime + "</small>";
-  res.send(responseText);
-});
-
-app.get("/secreturl", (req, res) => {
-  let responseText =
-    "You were not supposed to find this secret url with super top-secret content. It's secret!";
-  responseText += "<small>Requested at: " + req.requestTime + "</small>";
-  res.send(responseText);
-});
-
-app.get("/documentation", (req, res) => {
-  res.sendFile("public/documentation.html", { root: __dirname });
 });
 
 // error-handling middleware
