@@ -517,7 +517,7 @@ app.get('/movies/:title', async (req, res) => {
 app.get('/movies/genre/:genre', async (req, res) => {
     await Movies.findOne({ "Genre.Name": req.params.genre })
     .then((movie) => {
-        res.json(genre);
+        res.json(movie);
     })
     .catch((err) => {
         console.error(err);
