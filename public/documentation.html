@@ -129,11 +129,29 @@
         Format: JSON <br>
         Example: <br>
         { <br>
-          "name": "Lucy", <br>
+          "Username": "Lucy", <br>
           "favoriteMovie": ["The Forbidden Kingdom"] <br>
         }
       </td>
       <td>Created user object, or error message</td>
+    </tr>
+
+    <tr>
+      <td>Returns a list of all users</td>
+      <td>GET</td>
+      <td>/users</td>
+      <td>None</td>
+      <td>
+        { <br>
+          "id": 1, <br>
+          "Username": "Larry", <br>
+          "Password": "larrythestooge1", <br>
+          "Email": "larrythestooge1@example.com", <br>
+          "Birthday": "1970-01-01", <br>
+          "favoriteMovie": [] <br>
+        }
+      </td>
+      <td>User object info.</td>
     </tr>
 
     <tr>
@@ -173,7 +191,7 @@
       <td>De-register a user</td>
       <td>DELETE</td>
       <td>/users/:id</td>
-      <td>username</td>
+      <td>username (user's id)</td>
       <td>None</td>
       <td>Message: "User has been deleted."</td>
     </tr>
