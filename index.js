@@ -561,18 +561,6 @@ app.get('/movies/directors/:directorName', passport.authenticate('jwt', { sessio
     });
 });
 
-// Director info (READ)
-app.get('/movies/:Director', passport.authenticate('jwt', { session: false }), async (req, res) => {
-    await Movies.findOne({Director: req.params.Director })
-    .then((movie) => {
-        res.json(Director);
-    })
-    .catch((err) => {
-        console.error(err);
-        res.status(500).send('Error: ' + err);
-    });
-});
-
 // change a user's info, by username (UPDATE)
 app.put('/users/:Username', passport.authenticate('jwt', { session: false }), async (req, res) => {
   // Condition added
