@@ -445,20 +445,20 @@ let topMovies = [
 ];
 
 // GET requests
-app.get("/", passport.authenticate('jwt', { session: false }), (req, res) => {
+app.get("/", (req, res) => {
   let responseText = "Welcome to my kickin' app!";
   responseText += "<small>Requested at: " + req.requestTime + "</small>";
   res.send(responseText);
 });
 
-app.get("/secreturl", passport.authenticate('jwt', { session: false }), (req, res) => {
+app.get("/secreturl", (req, res) => {
   let responseText =
     "You were not supposed to find this secret url with super top-secret content. It's secret!";
   responseText += "<small>Requested at: " + req.requestTime + "</small>";
   res.send(responseText);
 });
 
-app.get("/documentation", passport.authenticate('jwt', { session: false }), (req, res) => {
+app.get("/documentation", (req, res) => {
   res.sendFile("public/documentation.html", { root: __dirname });
 });
 
@@ -554,6 +554,18 @@ app.get('/movies/directors/:directorName', passport.authenticate('jwt', { sessio
     await Movies.find({ "Director.Name": req.params.directorName })
     .then((movie) => {
         res.json(movie);
+    })
+    .catch((err) => {
+        console.error(err);
+        res.status(500).send('Error: ' + err);
+    });
+});
+
+// Director info (READ)
+app.get('/movies/:Director', passport.authenticate('jwt', { session: false }), async (req, res) => {
+    await Movies.findOne({Director: req.params.Director })
+    .then((movie) => {
+        res.json(Director);
     })
     .catch((err) => {
         console.error(err);
