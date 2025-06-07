@@ -13,8 +13,7 @@ const Users = Models.User;
 
 //mongoose.connect('mongodb://localhost:27017/kickFlixDB', {useNewUrlParser: true, useUnifiedTopology: true});
 
-mongoose.connect('mongodb+srv://ivangio1982:oLB11pu3RuSe0rKw@mrteacher787.yooeuoa.mongodb.net/kickFlixDB?retryWrites=true&w=majority', 
-  {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('process.env.CONNECTION_URI', {useNewUrlParser: true, useUnifiedTopology: true});
 
 app.use(bodyParser.json());
 // use Morgan for HTTP requests
