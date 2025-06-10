@@ -37,7 +37,22 @@
 
 ## API Endpoints
   - **Movies**
+    - HTTP Method: GET, Endpoint: /movies, Description: JSON object list of all movies
+    - HTTP Method: GET, Endpoint: /movies/:Title, Description: JSON object of a single movie
+    - HTTP Method: GET, Endpoint: /movies/genre/:genreName, Description: returns data about a genre by name
+    - HTTP Method: GET, Endpoint: /movies/director/:directorName, Description: returns data about a director by name
 
   - **Users**
+    - HTTP Method: GET, Endpoint: /users, Description: JSON object list of all users
+    - HTTP Method: POST, Endpoint: /users, Description: registers a user and returns data with a JWT Token
+    - HTTP Method: POST, Endpoint: /login, Description: takes users to login page to register
+    - HTTP Method: PUT, Endpoint: /users/:username, Description: allows user to update their profile info
+    - HTTP Method: GET, Endpoint: /users/:username, Description: gets info of single user by name
+    - HTTP Method: POST, Endpoint: /users/:username/movies/:movieID, Description: adds a movie to favorites list
+    - HTTP Method: DELETE, Endpoint: /users/:username/movies/:movieID, Description: removes a movie from favorites list
+    - HTTP Method: DELETE, Endpoint: /users/:username, Description: allows pre-existing user to deregister
 
 ## Future Enhancements
+  - Expand movie library
+  - Allow users to rate movies
+  - Add feature where users leave reviews on movies
